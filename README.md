@@ -80,7 +80,7 @@ USER_TONE: casual_garden
 
 - `SCENE_WORTHY: false`：不要硬配图，不要完整近况；可以继续推进，或只在内部记住趋势。
 - `SCENE_WORTHY: true`：停下来，带回一个“今天的小生态照片”。
-- `VISUAL_PRIORITY: medium/high`：建议补视觉参考或网图；如果主题是鱼、植物、池塘远景、季节氛围等舒适内容，应主动提供参考图，不必反复询问。
+- `VISUAL_PRIORITY: medium/high`：画面进入主流程。AI 应先确定这一轮要让用户看见什么，再给出图片、可点开的视觉参考，或明确搜索方向。鱼、植物、池塘远景、季节氛围等舒适主题，应主动提供参考图，不必反复询问。
 - `ADVANCE_SUGGESTION: ask`：需要选择时，先让人类决定，或明确说明 AI 自己的判断。
 - `ADVANCE_SUGGESTION: intervene`：生态进入危险段，语气也尽量轻，建议“要不要稍微帮它一下”，而不是发警报。
 
@@ -189,6 +189,7 @@ B. 可以接受真实生态特写
 请先阅读 README.md，找到 ecosystem.py，然后按“随手照看的小生态”模式开始。
 不要只贴原始 observe / wait 结果。
 看到 Companion Notes 时，请按 scene-based pacing 判断是否继续推进或停下来反馈。
+如果 VISUAL_PRIORITY 是 medium 或 high，请先用图 / 视觉参考讲故事，再解释生态意义。
 ```
 
 最自然的入口是：
